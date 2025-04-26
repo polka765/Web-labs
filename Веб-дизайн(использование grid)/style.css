@@ -13,8 +13,8 @@ body {
                 "photo1  article photo3" 1fr
                 "photo2  article photo4" 1fr
                 "footer  footer  footer" 80px
-                / 1fr 2fr 1fr; /* Изменено с 20% на доли */
-    gap: 1rem; /* Используем rem вместо vw */
+                / 1fr 2fr 1fr;
+    gap: 1rem;
     padding: 1rem;
     box-sizing: border-box;
     background: #EAC3BF;
@@ -72,10 +72,10 @@ body {
 .photo-img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Сохранение пропорций без обрезки */
+    object-fit: contain;
     max-width: 100%;
     max-height: 100%;
-    grid-area: 1 / 1; /* Размещение в единственной ячейке */
+    grid-area: 1 / 1;
 }
 
 @media (max-width: 900px) and (min-width: 701px) {

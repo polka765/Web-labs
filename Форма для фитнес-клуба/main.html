@@ -9,21 +9,18 @@
 <h1>Регистрация в фитнес-клубе "SuperFit"</h1>
 
 <form action="#" method="POST">
-  <!-- Текстовое поле -->
   <div class="form-group">
     <label class="required" for="fullname">ФИО:</label>
     <input type="text" id="fullname" name="fullname" required
            placeholder="Ваше ФИО">
   </div>
 
-  <!-- Текстовая область -->
   <div class="form-group">
     <label class="required" for="goals">Ваши цели:</label>
     <textarea id="goals" name="goals" rows="4" required
               placeholder="Опишите ваши фитнес-цели"></textarea>
   </div>
 
-  <!-- Поле пароля -->
   <div class="form-group">
     <label class="required" for="pin">PIN-код:</label>
     <input type="password" id="pin" name="pin" required
@@ -45,7 +42,6 @@
     </div>
   </fieldset>
 
-  <!-- Группа радиокнопок 2 -->
   <fieldset>
     <legend>Предпочитаемое время посещения:</legend>
     <div class="radio-group">
@@ -64,7 +60,6 @@
     </div>
   </fieldset>
 
-  <!-- Группа флажков 1 -->
   <fieldset>
     <legend>Дополнительные услуги:</legend>
     <div class="checkbox-group">
@@ -83,7 +78,6 @@
     </div>
   </fieldset>
 
-  <!-- Группа флажков 2 -->
   <fieldset>
     <legend>Дни посещения:</legend>
     <div class="checkbox-group">
@@ -98,7 +92,6 @@
     </div>
   </fieldset>
 
-  <!-- Раскрывающийся список -->
   <div class="form-group">
     <label for="trainer">Предпочитаемый тренер:</label>
     <select id="trainer" name="trainer">
@@ -109,13 +102,11 @@
     </select>
   </div>
 
-  <!-- Поле даты -->
   <div class="form-group">
     <label class="required" for="start_date">Дата начала:</label>
     <input type="date" id="start_date" name="start_date" required>
   </div>
 
-  <!-- Кнопки действия -->
   <div class="form-group">
     <input type="submit" value="Зарегистрироваться">
     <input type="reset" value="Очистить форму">
