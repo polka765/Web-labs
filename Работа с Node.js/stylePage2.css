@@ -1,0 +1,10 @@
+.text-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    max-width: 600px;
+}
+.delete-btn {
+    display: block;
+    margin: 0 10px 20px;
+}

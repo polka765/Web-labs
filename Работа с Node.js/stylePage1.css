@@ -1,0 +1,23 @@
+.container {
+    border: 1px solid #741C28;
+    background: #BB8C94;
+    padding: 20px;
+    margin: 10px;
+    max-width: 600px;
+    color: #F3E0D1;
+}
+
+body{
+    background: #F3E0D1;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 200px;
+    background-color: #741C28;
+    color: #F3E0D1;
+}

@@ -1,0 +1,55 @@
+body {
+    background: #F2DDCC;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    grid-template-areas:
+                "header header"
+                "menu article"
+                "contacts contacts";
+    grid-template-columns: 1fr 3fr;
+}
+
+.header {
+    grid-area: header;
+    background-color: #85544D;
+    padding: 20px;
+    text-align: center;
+    color: #F2DDCC;
+    font-family: "Myanmar Text", serif;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: #B1B6B2;
+    padding: 20px;
+    color: #85544D;
+}
+
+.article {
+    grid-area: article;
+    background-color: #F1C7A7;
+    padding: 20px;
+    color: #85544D;
+}
+
+.contacts {
+    grid-area: contacts;
+    background-color: #B1B6B2;
+    padding: 20px;
+    color: #85544D;
+}
+
+@media (max-width: 700px) {
+    .container {
+        grid-template-areas:
+                    "header"
+                    "menu"
+                    "article"
+                    "contacts";
+        grid-template-columns: 1fr;
+    }
+}

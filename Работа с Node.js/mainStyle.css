@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #F3E0D1;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Расстояние между кнопками */
+    margin-top: 20px;
+}
+
+button:nth-child(1) {
+    background-color: #BB8C94;
+    color: #F3E0D1;
+}
+
+button:nth-child(2) {
+    background-color: #BE6674;
+    color: #F3E0D1;
+}
+
+button:nth-child(3) {
+    background-color: #741C28;
+    color: #F3E0D1;
+}
