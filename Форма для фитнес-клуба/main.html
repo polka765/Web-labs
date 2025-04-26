@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Регистрация в фитнес-клубе</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Регистрация в фитнес-клубе "SuperFit"</h1>
+
+<form action="#" method="POST">
+  <!-- Текстовое поле -->
+  <div class="form-group">
+    <label class="required" for="fullname">ФИО:</label>
+    <input type="text" id="fullname" name="fullname" required
+           placeholder="Ваше ФИО">
+  </div>
+
+  <!-- Текстовая область -->
+  <div class="form-group">
+    <label class="required" for="goals">Ваши цели:</label>
+    <textarea id="goals" name="goals" rows="4" required
+              placeholder="Опишите ваши фитнес-цели"></textarea>
+  </div>
+
+  <!-- Поле пароля -->
+  <div class="form-group">
+    <label class="required" for="pin">PIN-код:</label>
+    <input type="password" id="pin" name="pin" required
+           placeholder="4-значный код" minlength="4" maxlength="4">
+  </div>
+
+  <!-- Группа радиокнопок 1 -->
+  <fieldset>
+    <legend class="required">Тип членства:</legend>
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="membership" value="basic" required>
+        Basic (тренажерный зал)
+      </label>
+      <label>
+        <input type="radio" name="membership" value="premium">
+        Premium (зал + групповые занятия)
+      </label>
+    </div>
+  </fieldset>
+
+  <!-- Группа радиокнопок 2 -->
+  <fieldset>
+    <legend>Предпочитаемое время посещения:</legend>
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="time" value="morning">
+        Утро (6:00-12:00)
+      </label>
+      <label>
+        <input type="radio" name="time" value="day">
+        День (12:00-18:00)
+      </label>
+      <label>
+        <input type="radio" name="time" value="evening">
+        Вечер (18:00-22:00)
+      </label>
+    </div>
+  </fieldset>
+
+  <!-- Группа флажков 1 -->
+  <fieldset>
+    <legend>Дополнительные услуги:</legend>
+    <div class="checkbox-group">
+      <label>
+        <input type="checkbox" name="personal_trainer">
+        Персональный тренер
+      </label>
+      <label>
+        <input type="checkbox" name="pool">
+        Бассейн
+      </label>
+      <label>
+        <input type="checkbox" name="sauna">
+        Сауна
+      </label>
+    </div>
+  </fieldset>
+
+  <!-- Группа флажков 2 -->
+  <fieldset>
+    <legend>Дни посещения:</legend>
+    <div class="checkbox-group">
+      <label>
+        <input type="checkbox" name="days[]" value="mon_wed_fri">
+        Пн-Ср-Пт
+      </label>
+      <label>
+        <input type="checkbox" name="days[]" value="tue_thu_sat">
+        Вт-Чт-Сб
+      </label>
+    </div>
+  </fieldset>
+
+  <!-- Раскрывающийся список -->
+  <div class="form-group">
+    <label for="trainer">Предпочитаемый тренер:</label>
+    <select id="trainer" name="trainer">
+      <option value="">-- Выберите тренера --</option>
+      <option value="1">Анна Петрова</option>
+      <option value="2">Максим Иванов</option>
+      <option value="3">Ольга Сидорова</option>
+    </select>
+  </div>
+
+  <!-- Поле даты -->
+  <div class="form-group">
+    <label class="required" for="start_date">Дата начала:</label>
+    <input type="date" id="start_date" name="start_date" required>
+  </div>
+
+  <!-- Кнопки действия -->
+  <div class="form-group">
+    <input type="submit" value="Зарегистрироваться">
+    <input type="reset" value="Очистить форму">
+  </div>
+</form>
+</body>
+</html>

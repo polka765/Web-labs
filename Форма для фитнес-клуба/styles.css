@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    color: #8b004c;
+}
+
+h1 {
+    font-family: FANTASY;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-family: HELVETICA, serif;
+    font-weight: bold;
+    color: #6d008b;
+}
+
+.required::after {
+    content: "*";
+    color: #DF1B3F;
+    margin-left: 3px;
+}
+
+input, textarea, select {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: 1px solid #8b004c;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+legend {
+    font-family: HELVETICA, serif;
+    font-weight: bold;
+    padding: 0 5px;
+    color: #8b004c;
+}
+
+.checkbox-group, .radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.checkbox-group label,
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"],
+.radio-group input[type="radio"] {
+    margin: 0;
+    width: auto;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: rgba(145, 210, 255, 0.6); /* Синий фон */
+    color: white; /* Белый текст */
+    border: none; /* Убрать границу */
+    padding: 12px 24px; /* Размеры */
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(121, 255, 175, 0.55); /* Темно-зеленый */
+    cursor: pointer;
+}
+
+input[type="reset"]:hover {
+    background-color: rgba(223, 93, 171, 0.55); /* Темно-красный */
+}
