@@ -16,7 +16,7 @@ button {
 .buttons-container {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Расстояние между кнопками */
+    gap: 15px;
     margin-top: 20px;
 }
 
